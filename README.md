@@ -36,7 +36,7 @@ Feel free to connect with me:
 - LinkedIn: [abie21](https://linkedin.com/in/abie21)
 - Discord: [Join Here](https://discord.gg/8cMU3M3J)
 - Instagram: [abisheik.thangabalan](https://instagram.com/abisheik.thangabalan)
-- Email: abisheikthangabalan@example.com *(Replace with your real email)*
+- Email: abisheiktb21@gmail.com
 
 ## 🧾 License
 
