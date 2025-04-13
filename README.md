@@ -1,4 +1,4 @@
-# 💼 Abisheik Thangabalan – Developer Portfolio
+# 💼 Abisheik Thangabalan – Personal Portfolio
 
 Welcome to my personal developer portfolio! This is a responsive and theme-switchable web portfolio showcasing my skills, projects, and contact information.
 
