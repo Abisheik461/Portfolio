@@ -209,7 +209,7 @@ body.dark-theme #themeToggle {
 
 .intro p {
     font-size: 1.2rem;
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     color: #666;
 }
@@ -252,6 +252,46 @@ body.dark-theme .icons a {
 body.dark-theme .icons a:hover {
     color: #42a5f5;
 }
+
+
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.profile-image img {
+    width: 250px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4A90E2;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.intro {
+    max-width: 600px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-top: 2rem;
+    }
+}
+
 .about {
     padding: 4rem 2rem;
     background-color: #f4f4f4;
@@ -279,6 +319,11 @@ body.dark-theme .icons a:hover {
     font-weight: bold;
     color: #333;
 }
+.highlight {
+    white-space: nowrap ;
+    /* Prevent line break */
+}
+
 
 .about-btn {
     display: inline-block;
