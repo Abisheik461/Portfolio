@@ -788,4 +788,22 @@ body.dark-theme .send-btn:hover {
 html {
     scroll-behavior: smooth;
   }
+
+
+.visitor-counter {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  font-size: 14px;
+}
+.visitor-counter img {
+  vertical-align: middle;
+  height: 20px;
+}
+
   
