@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abisheik Thangabalan</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="assets/Frame 1.svg" type="image/svg+xml" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    
+    <nav class="navbar" >
+        <!-- <a href="./index.html">
+            <div class="logo">
+                <img src="" width="53" height="52">
+            </div>
+        </a> -->
+       
+    
+        <button class="hamburger" id="hamburger">&#9776;</button>
+    
+        <ul class="navbar-items" id="navMenu">
+            <li><a href="./index.html" >Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    
+        <button id="themeToggle" aria-label="Toggle Theme">
+            <i id="themeIcon" class="fas fa-sun"></i>
+        </button>
+        
+    </nav>
+    
+    
+
+    <section class="home" id="home">
+        <div class="intro">
+            <h1>Hi there, I'm  <span class="highlight">Abisheik Thangabalan</span></h1>
+            <p>I love turning ideas into reality through code. Always learning, always building. Let’s create something amazing together!</p>
+        </div>
+    
+        <div class="socials">
+            <h2>Connect with me</h2>
+            <div class="icons">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://discord.com" target="_blank" aria-label="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+                I'm a passionate <span class="highlight">Full Stack Developer</span> with hands-on experience in building dynamic web applications. I've developed various projects from simple landing pages to complex full-stack apps.
+            </p>
+            
+            <p>
+                I'm a fast learner, constantly exploring new technologies, and committed to writing clean, efficient code. I believe in continuous learning and pushing my limits every day.
+            </p>
+            <a href="https://github.com/your-github-username" target="_blank" class="about-btn">
+                Know More About Me <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project Title 1</h3>
+                <p>Description of the project goes here. Brief and to the point, explaining what the project does and its key features.</p>
+                <a href="https://github.com/your-repo-1" target="_blank" class="view-btn">View</a>
+            </div>
+    
+            <div class="project-card">
+                <h3>Project Title 2</h3>
+                <p>Description of the project goes here. Brief and to the point, explaining what the project does and its key features.</p>
+                <a href="https://github.com/your-repo-2" target="_blank" class="view-btn">View</a>
+            </div>
+    
+            <div class="project-card">
+                <h3>Project Title 3</h3>
+                <p>Description of the project goes here. Brief and to the point, explaining what the project does and its key features.</p>
+                <a href="https://github.com/your-repo-3" target="_blank" class="view-btn">View</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out if you have any questions or would like to collaborate!</p>
+            <form action="mailto:abisheiktb21@gmail.com" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    
+                    <input type="text" id="fullName" name="fullName" required placeholder="Your Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Your Email Address">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+    
+    
+    
+    
+    
+    
+
+
+
+    <script>
+        
+        const toggleBtn = document.getElementById('themeToggle');
+    const body = document.body;
+    const themeIcon = document.getElementById('themeIcon');
+
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-theme');
+        themeIcon.classList.replace('fa-sun', 'fa-moon');
+    }
+
+    toggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        const isDark = body.classList.contains('dark-theme');
+
+        themeIcon.classList.toggle('fa-sun', !isDark);
+        themeIcon.classList.toggle('fa-moon', isDark);
+
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+        
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+   
+
+
+    </script>
+</body>
+</html>
