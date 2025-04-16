@@ -805,5 +805,30 @@ html {
   vertical-align: middle;
   height: 20px;
 }
+.download-btn {
+    padding: 8px 16px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #357ABD;
+}
+
+/* Dark Theme version */
+body.dark-theme .download-btn {
+    background-color: #90CAF9;
+    color: #121212;
+}
+
+body.dark-theme .download-btn:hover {
+    background-color: #64B5F6;
+}
 
   
